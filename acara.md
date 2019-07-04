@@ -1,8 +1,11 @@
 ## Konsep
- {Lightning Talk, Tech Talk, Instant Talk, Bootcamp, Hackathon}
- ## Susunan acara
- | WAKTU | PEMBICARA | AGENDA |
- |---------|------------|-----------|
- 
- ## Aturan
+
+Meetup (Tech talk, Lightning talk)
+
+## Susunan acara
+
+| WAKTU | PEMBICARA | AGENDA |
+|---------|------------|-----------|
+
+## Aturan
 
