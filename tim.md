@@ -1,5 +1,6 @@
 # Tim Acara Meetup007
 
-| Nama | Tanggung Jawab |
-|--------|-----------------|
+| Nama      | Tanggung Jawab  |
+|-----------|-----------------|
+| Herpiko   | Sponsorship     |
 
