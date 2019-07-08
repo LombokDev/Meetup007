@@ -3,4 +3,5 @@
 | Nama      | Tanggung Jawab  |
 |-----------|-----------------|
 | Herpiko   | Sponsorship     |
+| Awan      | Website         |
 
