@@ -4,4 +4,5 @@
 |-----------|-----------------|
 | Herpiko   | Sponsorship     |
 | Awan      | Website         |
+| Dian      | Website         |
 
