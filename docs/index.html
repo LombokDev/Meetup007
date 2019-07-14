@@ -212,6 +212,34 @@
         </div>
     </section>
 
+    <footer>
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-2 p-2">
+                    <a href="https://lombokdev.github.io/">
+                        <img src="assets/img/lombok-dev.png" />
+                    </a>
+                </div>
+                <div class="col-md-10">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lombokdev.github.io/#tentang" target="_blank">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lombokdev.github.io/past-event.html" target="_blank">Event Terlaksana</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/LombokDev/wiki/blob/master/code-of-conduct.md" target="_blank">Kode Etik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://t.me/lombokdev" target="_blank">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script type="text/javascript">
         var countDownDate = new Date("Jul 28, 2019 00:00:00 ").getTime();
         var x = setInterval(function () {
@@ -226,7 +254,7 @@
             document.getElementById("countdown").innerHTML = hari + " Hari " + jam + " Jam " +
                 menit + " Menit " + detik + " Detik ";
 
-            var isCountdownFinish = distance < 0; 
+            var isCountdownFinish = distance < 0;
             if (isCountdownFinish) {
                 clearInterval(x);
                 document.getElementById("countdown").classList.add("d-none");
