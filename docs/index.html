@@ -1,12 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <title>Lombokdev MeetUp #007</title>
-    <link rel="shortcut icon" href="assets/img/favicon.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="LombokDev Meetup adalah acara rutin yang diselenggarakan bersama untuk memenuhi kebutuhan informasi, inspirasi, ilmu dan teknologi baru di dunia IT, open source, pengembangan perangkat lunak, sysadmin dan bidang terkait." />
 
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
@@ -20,7 +22,7 @@
             <div class="h4 text-info" id="countdown"></div>
 
             <div class="py-5">
-                <a href="#register" class="btn btn-lg btn-primary" role="button">Daftar Sekarang</a>
+                <a href="#register" id="btnregister" class="btn btn-lg btn-primary" role="button">Daftar Sekarang</a>
             </div>
         </div>
     </header>
@@ -29,17 +31,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center p-4">
-                        <svg width="64" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>
+                    <svg width="64" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="map-marker-alt"
+                        class="svg-inline--fa fa-map-marker-alt fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 384 512">
+                        <path fill="currentColor"
+                            d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                        </path>
+                    </svg>
                     <h5 class="h5">Lokasi Acara</h5>
                     <div><a href="#maps">Jl. Panji Asmara No.3,A, Kota Mataram</a></div>
                 </div>
                 <div class="col-md-4 text-center p-4">
-                        <svg width="64" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar-alt" class="svg-inline--fa fa-calendar-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z"></path></svg>
+                    <svg width="64" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="calendar-alt"
+                        class="svg-inline--fa fa-calendar-alt fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512">
+                        <path fill="currentColor"
+                            d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z">
+                        </path>
+                    </svg>
                     <h5 class="h5">Hari & Tanggal</h5>
                     <div>Minggu, 28 Juli 2019</div>
                 </div>
                 <div class="col-md-4 text-center p-4">
-                        <svg width="64" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock" class="svg-inline--fa fa-clock fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
+                    <svg width="64" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="clock"
+                        class="svg-inline--fa fa-clock fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 512 512">
+                        <path fill="currentColor"
+                            d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm57.1 350.1L224.9 294c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h48c6.6 0 12 5.4 12 12v137.7l63.5 46.2c5.4 3.9 6.5 11.4 2.6 16.8l-28.2 38.8c-3.9 5.3-11.4 6.5-16.8 2.6z">
+                        </path>
+                    </svg>
                     <h5 class="h5">Waktu</h5>
                     <div>08:00 AM - Selesai</div>
                 </div>
@@ -60,7 +80,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-5">
-                                <img src="assets/img/speaker/hayi.webp" class="img-fluid rounded" alt="speaker photo" />
+                                <img src="assets/img/speaker/hayi.webp" class="img-fluid border rounded" alt="speaker photo" />
                             </div>
                             <div class="col-7">
                                 <span class="badge badge-success">Live Code</span>
@@ -78,7 +98,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-5">
-                                <img src="assets/img/speaker/bintang.jpg" class="img-fluid rounded"
+                                <img src="assets/img/speaker/bintang.jpg" class="img-fluid border rounded"
                                     alt="speaker photo" />
                             </div>
                             <div class="col-7">
@@ -97,7 +117,7 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-5">
-                                <img src="assets/img/speaker/herpiko.webp" class="img-fluid rounded"
+                                <img src="assets/img/speaker/herpiko.webp" class="img-fluid border rounded"
                                     alt="speaker photo" />
                             </div>
                             <div class="col-7">
@@ -116,13 +136,31 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-5">
-                                <img src="assets/img/speaker/awan.webp" class="img-fluid rounded" alt="speaker photo" />
+                                <img src="assets/img/speaker/awan.webp" class="img-fluid border rounded" alt="speaker photo" />
                             </div>
                             <div class="col-7">
                                 <span class="badge badge-info">Tech Talk</span>
                                 <h5 class="h5">Microservice Dengan gRPC + Protobuf</h5>
                                 <div class="text-secondary">Darmawan Zulkifli</div>
-                                <small class="text-muted">FLOSS Enthusiast</small>
+                                <small class="text-muted">Kuli Kode</small>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card For Speakker -->
+                <div class="card col-lg-4 p-0 border-0">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="assets/img/speaker/putuhariadi.webp" class="img-fluid border rounded" alt="speaker photo" />
+                            </div>
+                            <div class="col-7">
+                                <span class="badge badge-info">Tech Talk</span>
+                                <h5 class="h5">Network Automation with Ansible</h5>
+                                <div class="text-secondary">I Putu Hariadi</div>
+                                <small class="text-muted">Dosen Universitas Bumigora</small>
                             </div>
                         </div>
                         </p>
@@ -173,9 +211,12 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-3 p-4">
+                <div class="col-md-12 p-4">
                     <a href="https://www.petanikode.com/" target="_blank">
-                        <img width="120" src="assets/img/media/petanikode.png" alt="Petani Kode Logo" />
+                        <img width="120" src="assets/img/media/petanikode.webp" alt="Petani Kode Logo" />
+                    </a>
+                    <a href="https://www.instagram.com/eventlombok.id/" target="_blank">
+                        <img width="120" src="assets/img/media/eventlombokid.webp" alt="EventLombok.id Logo" />
                     </a>
                 </div>
             </div>
@@ -192,66 +233,58 @@
         </div>
     </section>
 
-
-    <!-- <footer class="footer">
-        <div class="copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="author">
-                            <h4><b>Diselenggarakan Oleh</b></h4>
-                            <div class="logo_author">
-                                <img src="assets/img/lombok-dev.png" alt="" width="300px" height="auto">
-                            </div>
-                        </div>
-                    </div>
+    <footer>
+        <div class="container my-5">
+            <div class="row justify-content-between">
+                <div class="col-md-2 p-2 text-lg-left text-center">
+                    <a href="https://lombokdev.github.io/">
+                        <img src="assets/img/lombok-dev.png" />
+                    </a>
                 </div>
-                <p class="text-center">
-                </p>
+                <div class="col-md-10">
+                    <ul class="nav justify-content-md-end justify-content-lg-end justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lombokdev.github.io/#tentang" target="_blank">Tentang</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://lombokdev.github.io/past-event.html" target="_blank">Event
+                                Terlaksana</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/LombokDev/wiki/blob/master/code-of-conduct.md"
+                                target="_blank">Kode Etik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://t.me/lombokdev" target="_blank">Kontak</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </footer> -->
-
-    <script src="assets/js/jquery-3.2.1.min.js "></script>
-    <script src="assets/js/bootstrap.min.js "></script>
-    <script type="text/javascript " src="assets/js/particles.min.js "></script>
-    <script type="text/javascript ">
-        window.onload = function() {
-            Particles.init({
-                selector: '.background',
-                color: '#263238',
-                connectParticles: true,
-                maxParticles: 75,
-                minDistance: 75,
-                speed: 1.5,
-            });
-        };
-
-    </script>
+    </footer>
 
     <script type="text/javascript">
-        var countDownDate = new Date("Jul 26, 2019 00:00:00 ").getTime();
+        var countDownDate = new Date("Jul 28, 2019 00:00:00 ").getTime();
         var x = setInterval(function () {
             var now = new Date().getTime();
             var distance = countDownDate - now;
-
 
             var hari = Math.floor(distance / (1000 * 60 * 60 * 24));
             var jam = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             var menit = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var detik = Math.floor((distance % (1000 * 60)) / 1000);
 
-
             document.getElementById("countdown").innerHTML = hari + " Hari " + jam + " Jam " +
                 menit + " Menit " + detik + " Detik ";
 
-
-            if (distance < 0) {
+            var isCountdownFinish = distance < 0;
+            if (isCountdownFinish) {
                 clearInterval(x);
-                document.getElementById("countdown").innerHTML = "Lombok Dev MeetUp #7. ";
+                document.getElementById("countdown").classList.add("d-none");
+                document.getElementById("register").classList.add("d-none");
+                document.getElementById("btnregister").classList.add("disabled");
             }
         }, 1000);
-
     </script>
 </body>
 
