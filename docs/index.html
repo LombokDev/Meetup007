@@ -33,7 +33,7 @@
             <div class="h4 text-info" id="countdown"></div>
 
             <div class="py-5">
-                <a href="#register" id="btnregister" class="btn btn-lg btn-primary" role="button">Daftar Sekarang</a>
+                <a href="#register" class="btn btn-lg btn-primary" role="button">Daftar Sekarang</a>
             </div>
         </div>
     </header>
@@ -235,8 +235,8 @@
                     <p class="font-italic text-secondary">*Note: pendaftaran gratis dan peserta terbatas!</p>
 
                     <div class="my-4">
-                        <a class="btn btn-lg btn-primary" href="https://www.meetup.com/lombokdev/events/262863940/"
-                            target="_blank">Daftar di Sini</a>
+                        <a class="btn btn-lg btn-primary"  id="btnregister" href="https://www.meetup.com/lombokdev/events/262863940/"
+                            target="_blank" role="button">Daftar di Sini</a>
                     </div>
                     <p>Ada pertanyaan?<br />
                         Silahkan hubungi kami melalui:</p>
@@ -375,8 +375,9 @@
             if (isCountdownFinish) {
                 clearInterval(x);
                 document.getElementById("countdown").classList.add("d-none");
-                document.getElementById("register").classList.add("d-none");
-                document.getElementById("btnregister").classList.add("disabled");
+                document.getElementById("btnregister").classList.add("disabled", "btn-secondary");
+                document.getElementById("btnregister").href = "#";
+                document.getElementById("btnregister").innerHTML = "Pendaftaran ditutup!";
             }
         }, 1000);
     </script>
